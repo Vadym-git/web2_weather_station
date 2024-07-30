@@ -1,9 +1,9 @@
-import { playlistStore } from "../models/playlist-store.js";
+import { stationStore } from "../models/station-store.js";
 import { trackStore } from "../models/track-store.js";
 
-export const playlistController = {
+export const stationsController = {
   async index(request, response) {
-    const playlist = await playlistStore.getPlaylistById(request.params.id);
+    const playlist = await stationStore.getStationById(request.params.id);
     const viewData = {
       title: "Playlist",
       playlist: playlist,
@@ -12,7 +12,7 @@ export const playlistController = {
   },
 
   async addTrack(request, response) {
-    const playlist = await playlistStore.getPlaylistById(request.params.id);
+    const playlist = await stationListStore.getStationById(request.params.id);
     const newTrack = {
       title: request.body.title,
       artist: request.body.artist,

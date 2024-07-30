@@ -1,7 +1,7 @@
 {
-  "name": "playlist",
-  "version": "0.2.0",
-  "description": "Simple Playlist Maker",
+  "name": "Weather Stations",
+  "version": "0.0.1",
+  "description": "Weather Stations around the world",
   "main": "server.js",
   "type": "module",
   "scripts": {

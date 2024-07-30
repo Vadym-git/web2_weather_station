@@ -1,14 +1,12 @@
-# Playlist Changelog
+# Weather Station
+## The project was copied from the lab3, it means the changes will be added release by release
+## until the final version could contains some part from the lab3
 
-## version 0.2.0
-
-- introduce track-store model
-- new view to display tracks
-- new form to add tracks to a playlist
-
-## version 0.1.0
-
-- initial version ported from glitch-template
-- introduce playlist-store model for simple playlists
-- allow playlists to be added to this model
-- list all playlists in the model
+## version 0.0.1
+- addStation added to dashboardController
+- route path changed
+- static files changed
+- page About changed
+- *the rest changes will be added in the next releases
+- controllers, views changed
+- models changed for baseline functionality
