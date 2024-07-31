@@ -1,0 +1,33 @@
+<form class="box" action="/station/{{station._id}}/addreport" method="POST">
+    <!-- <label>Enter Report Details:</label> -->
+    <div class="field is-horizontal">
+        <div class="field-body">
+            <div class="field">
+                <label><b>Code</b></code>
+                    <input class="input" type="text" placeholder="Enter Code" name="title">
+                </div>
+                <div class="field">
+                    <label><b>Temperature</b></code>
+                        <input class="input" type="number" placeholder="Enter Temperature" name="temp">
+                    </div>
+                    <div class="field">
+                        <label><b>Wind speed</b></code>
+                            <input class="input" type="number" placeholder="Enter Wind speed" name="wind_speed">
+                        </div>
+                        <div class="field">
+                            <label><b>Pressure</b></code>
+                                <input class="input" type="number" placeholder="Enter Pressuren" name="pressure">
+                            </div>
+                            <div class="field">
+                                <label><b>Wind derection</b></code>
+                                    <select name="derection">
+                                                <option value="north">Noth</option>
+                                                <option value="south">South</option>
+                                                <option value="east">East</option>
+                                                <option value="west">West</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button is-primary">Add Report</button>
+                </form>

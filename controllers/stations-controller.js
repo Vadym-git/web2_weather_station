@@ -1,25 +1,27 @@
 import { stationStore } from "../models/station-store.js";
-import { trackStore } from "../models/track-store.js";
+import { reportStore } from "../models/report-store.js";
 
 export const stationsController = {
   async index(request, response) {
-    const playlist = await stationStore.getStationById(request.params.id);
+    const station = await stationStore.getStationById(request.params.id);
+    const reports = await reportStore.getReportByStationId(request.params.id);
     const viewData = {
-      title: "Playlist",
-      playlist: playlist,
+      station: station,
+      reports: reports,
     };
-    response.render("playlist-view", viewData);
+    response.render("station-view", viewData);
   },
 
-  async addTrack(request, response) {
-    const playlist = await stationListStore.getStationById(request.params.id);
-    const newTrack = {
+  async addReport(request, response) {
+    const station = await stationStore.getStationById(request.params.id);
+    const newReport = {
       title: request.body.title,
-      artist: request.body.artist,
-      duration: Number(request.body.duration),
+      temp: Number(request.body.temp),
+      wind_speed: Number(request.body.wind_speed),
+      pressure: Number(request.body.pressure),
     };
-    console.log(`adding track ${newTrack.title}`);
-    await trackStore.addTrack(playlist._id, newTrack);
-    response.redirect("/playlist/" + playlist._id);
+    console.log(`adding report ${newReport.title}`);
+    await reportStore.addReport(station._id, newReport);
+    response.redirect("/station/" + station._id);
   },
 };

@@ -10,3 +10,9 @@
 - *the rest changes will be added in the next releases
 - controllers, views changed
 - models changed for baseline functionality
+
+## version 0.0.2
+- addReports added
+- changed views
+- changed model
+- changed path

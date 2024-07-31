@@ -1,0 +1,13 @@
+{
+  "file": "./models/reports.json",
+  "reports": [
+    {
+      "title": "test",
+      "temp": 12,
+      "wind_speed": 34,
+      "pressure": 455,
+      "_id": "b4cd2f76-af87-4487-8f22-b4b8ff88bc76",
+      "stationId": "ee94baf9-50ad-43dd-a297-cfb18ed4aded"
+    }
+  ]
+}
