@@ -5,13 +5,14 @@
       <th>Temperature</th>
       <th>Wind Speed</th>
       <th>Pressure</th>
+      <th>Derection</th>
     </tr>
   </thead>
   <tbody>
     {{#each reports}}
     <tr>
       <td>
-        {{title}}
+        {{code}}
       </td>
       <td>
         {{temp}}
@@ -21,6 +22,9 @@
       </td>
       <td>
         {{pressure}}
+      </td>
+      <td>
+        {{direction}}
       </td>
     </tr>
     {{/each}}

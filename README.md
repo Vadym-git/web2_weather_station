@@ -1,1 +1,2 @@
-# Playlist 0.2.0
+# Weather stations
+https://weather-stations.glitch.me

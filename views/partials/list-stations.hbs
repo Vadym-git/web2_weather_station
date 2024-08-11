@@ -1,9 +1,28 @@
-{{#each stations}}
-<div class="box box-link-hover-shadow">
-  <h2 class="title">
-    <a href="/station/{{_id}}">
-      {{title}}
-    </a>
-  </h2>
-</div>
-{{/each}}
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each stations}}
+    <tr>
+      <td>
+          <h3 class="title">
+            <a href="/station/{{_id}}">
+              {{title}}
+            </a>
+        </h3>
+      </td>
+      <td>
+        {{latitude}}
+      </td>
+      <td>
+        {{longitude}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

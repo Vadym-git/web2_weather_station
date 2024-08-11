@@ -16,3 +16,9 @@
 - changed views
 - changed model
 - changed path
+
+## version 0.0.3
+### Reached Release 2 requests
+ - Min/Max pressure/wind/temp
+ - users login/signup
+ - only user's stations

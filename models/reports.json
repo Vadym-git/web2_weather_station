@@ -2,12 +2,31 @@
   "file": "./models/reports.json",
   "reports": [
     {
-      "title": "test",
-      "temp": 12,
-      "wind_speed": 34,
-      "pressure": 455,
-      "_id": "b4cd2f76-af87-4487-8f22-b4b8ff88bc76",
-      "stationId": "ee94baf9-50ad-43dd-a297-cfb18ed4aded"
+      "code": "123",
+      "temp": 23,
+      "wind_speed": 23,
+      "pressure": 23,
+      "direction": "north",
+      "_id": "5e5a034b-cde6-4524-ae0b-68e617626ba9",
+      "stationId": "ef97b360-420d-439a-b3ee-3b9dbf6144f8"
+    },
+    {
+      "code": "124",
+      "temp": 22,
+      "wind_speed": 22,
+      "pressure": 22,
+      "direction": "north",
+      "_id": "9930504a-04bf-4b6a-8765-251f3266b574",
+      "stationId": "ef97b360-420d-439a-b3ee-3b9dbf6144f8"
+    },
+    {
+      "code": "125",
+      "temp": 21,
+      "wind_speed": 20,
+      "pressure": 19,
+      "direction": "north",
+      "_id": "adb1b7f3-61f2-435f-93ae-35e62647f534",
+      "stationId": "ef97b360-420d-439a-b3ee-3b9dbf6144f8"
     }
   ]
 }

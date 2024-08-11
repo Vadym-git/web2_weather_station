@@ -1,0 +1,19 @@
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Vadym",
+      "lastName": "Melnychenko",
+      "email": "vadim.melnichenko@gmail.com",
+      "password": "123",
+      "_id": "bc147541-60fa-4c12-9935-e1f00457ff96"
+    },
+    {
+      "firstName": "lana",
+      "lastName": "lana",
+      "email": "lana.sunlet@gmail.com",
+      "password": "123",
+      "_id": "1b456571-667a-4b74-897d-ef5c96d9e37e"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.weatrer-box-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weatrer-box{
+    display: flex;
+    /* justify-content: space-around; */
+    background-color: black;
+    width: 160px;
+    height: 160px;
+    margin: 4px;
+    padding: 8px 4px 8px 4px;
+    border-radius: 12px;
+    color: white;
+}
+
+.weatrer-box > div {
+    flex: 1; /* Each child div takes up equal space */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically within each div */
+    justify-content: space-between; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Align text to the center */
+}
+
+.weatrer-box > div:first-child {
+    margin-right: 8px; /* Add some space between the two divs */
+}
+
+.card-img{
+}

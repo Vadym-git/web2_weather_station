@@ -8,6 +8,11 @@
         <div class="buttons">
           <a id="dashboard" class="button" href="/dashboard"> Dashboard </a>
           <a id="about" class="button" href="/about"> About </a>
+          {{#if user}}
+          <a id="user" class="button" href="/user"> {{user.firstName}} </a>
+          {{else}}
+          <a id="user" class="button" href="/user"> Login </a>
+          {{/if}}
         </div>
       </div>
     </div>

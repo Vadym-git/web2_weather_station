@@ -2,20 +2,11 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "station 1",
-      "_id": "ee94baf9-50ad-43dd-a297-cfb18ed4aded"
-    },
-    {
-      "title": "station 2",
-      "_id": "49e69a40-0280-428e-93d7-d1abdc5e908c"
-    },
-    {
       "title": "station 3",
-      "_id": "9fe384e7-118a-4ca7-9234-2a69ae2e7d83"
-    },
-    {
-      "title": "station 4",
-      "_id": "38dfac01-5478-49ba-bbbc-a16dd839f73e"
+      "latitude": "123",
+      "longitude": "432",
+      "userId": "bc147541-60fa-4c12-9935-e1f00457ff96",
+      "_id": "ef97b360-420d-439a-b3ee-3b9dbf6144f8"
     }
   ]
 }

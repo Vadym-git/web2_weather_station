@@ -1,6 +1,14 @@
 {{> menu active="dashboard"}}
-
 <section class="section">
-  {{> list-stations}}
-  {{> add-station}}
+    <h3 class="title">
+      Dashboard
+    </h3>
+    {{#if user}}
+      {{> list-stations}}
+      {{> add-station}}
+    {{else}}
+    <div class="field is-grouped">
+      <a href="/user" class="button is-link">Login</a>
+    </div>
+    {{/if}}
 </section>

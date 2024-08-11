@@ -1,0 +1,14 @@
+{{> menu active="user"}}
+
+<section class="box is-3 has-text-centered">
+  <h3 class="title">
+    User dashboard
+  </h3>
+  <div class="section">
+    {{#if user}}
+      {{> user-details}}
+    {{else}}
+      {{> log-in}}
+    {{/if}}
+  </div>
+</section>
