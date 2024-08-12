@@ -2,7 +2,16 @@
 
 <section class="box is-3 has-text-centered">
   <h3 class="title">
-    User dashboard
+      {{#if user}}
+      <form action="/user/logout" method="post">
+          <div class="field is-grouped">
+            <button class="button is-danger">Logout</button>
+          </div>
+      </form>
+        {{capitalizeFirst user.firstName}}'s details
+        {{else}}
+        User's details
+    {{/if}}
   </h3>
   <div class="section">
     {{#if user}}

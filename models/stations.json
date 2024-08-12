@@ -2,11 +2,19 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "station 3",
-      "latitude": "123",
-      "longitude": "432",
+      "title": "lana",
+      "latitude": "2332.0001",
+      "longitude": "3254",
+      "userId": "1b456571-667a-4b74-897d-ef5c96d9e37e",
+      "_id": "767072d6-6af8-434e-9ad3-1e3e2c68f5f6"
+    },
+    {
+      "title": "Dublin",
+      "latitude": "2332.0001",
+      "longitude": "213444324",
       "userId": "bc147541-60fa-4c12-9935-e1f00457ff96",
-      "_id": "ef97b360-420d-439a-b3ee-3b9dbf6144f8"
+      "date": "2024-08-12T10:30:57.356Z",
+      "_id": "e5ccfbb2-2141-48f9-a0cf-8dc3b8fb5ba1"
     }
   ]
 }

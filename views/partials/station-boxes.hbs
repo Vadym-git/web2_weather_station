@@ -1,0 +1,65 @@
+<div class="weatrer-box-holder">
+    <div class="weatrer-box">
+        <div>
+            <div>
+                <b>{{capitalizeFirst station.title}}</b><br>
+                Lat: {{station.latitude}}
+                Long: {{station.longitude}}
+            </div>
+        </div>
+        <div>
+            <img src="/img/map.png" alt="" style="width: 42px;">
+        </div>
+    </div>
+    <div class="weatrer-box">
+        <div>
+            <div>
+                <b>Weather</b><br>
+            </div>
+        </div>
+        <div>
+            <img src="/img/cloudy.png" alt="" style="width: 42px;">
+        </div>
+    </div>
+    <div class="weatrer-box">
+        <div>
+            <div>
+                <b>Temp</b><br>
+                Now: {{currentTemp}} ℃<br>
+                Now: {{toFixed currentTempF 2}} F<br>
+                Max: {{maxT}}℃<br>
+                Min: {{minT}}℃
+          </div>
+        </div>
+        <div>
+            <img src="/img/temperature.png" alt="" style="width: 42px;">
+        </div>
+    </div>
+    <div class="weatrer-box">
+        <div>
+            <div>
+                <b>Wind</b><br>
+                Now: {{currentWind}} bft<br>
+                {{capitalizeFirst currentWindD}}<br>
+                Max: {{maxW}}<br>
+                Min: {{minW}}
+            </div>
+        </div>
+        <div>
+            <img src="/img/bad-weather.png" alt="" style="width: 42px;">
+        </div>
+    </div>
+    <div class="weatrer-box">
+        <div>
+            <div>
+                <b>Pressure</b>
+                Now: {{currentPress}} hpa<br>
+                Max: {{maxP}}<br>
+                Min: {{minP}}
+            </div>
+        </div>
+        <div>
+            <img src="/img/barometer.png" alt="" style="width: 42px;">
+        </div>
+    </div>
+</div>

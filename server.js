@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
+import dayjs from "dayjs";
 
 const app = express();
 // Register a helper for uppercasing text
@@ -16,6 +17,13 @@ app.engine(".hbs", engine({
         capitalizeFirst: function (text) {
             if (typeof text !== "string") return "";
             return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+        },
+        toFixed: function (number, decimals) {
+            if (typeof number !== "number") return "";
+            return number.toFixed(decimals);
+        },
+        formatDate: function (date, format) {
+            return dayjs(date).format(format);
         }
     }
 }));
@@ -28,5 +36,5 @@ app.set("views", "./views");
 app.use("/", router);
 
 const listener = app.listen(process.env.PORT || 4000, function () {
-    console.log(`Todolist started on http://localhost:${listener.address().port}`);
+    console.log(`App started on http://localhost:${listener.address().port}`);
     });

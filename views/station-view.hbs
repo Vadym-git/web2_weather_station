@@ -4,69 +4,10 @@
   <div class="title">
     <b>{{uppercase station.title}}</b>
   </div>
-  <div class="weatrer-box-holder">
-      <div class="weatrer-box">
-          <div>
-              <div>
-                  <b>{{capitalizeFirst station.title}}</b><br>
-                  Lat: {{station.latitude}}
-                  Long: {{station.longitude}}
-              </div>
-          </div>
-          <div>
-              <img src="/img/map.png" alt="" style="width: 42px;">
-          </div>
-      </div>
-      <div class="weatrer-box">
-          <div>
-              <div>
-                  <b>Weather</b>
-              </div>
-          </div>
-          <div>
-              <img src="/img/cloudy.png" alt="" style="width: 42px;">
-          </div>
-      </div>
-      <div class="weatrer-box">
-          <div>
-              <div>
-                  <b>Temp</b>
-                  Now: -
-                  Max: {{maxT}}℃
-                  Min: {{minT}}℃
-            </div>
-          </div>
-          <div>
-              <img src="/img/temperature.png" alt="" style="width: 42px;">
-          </div>
-      </div>
-      <div class="weatrer-box">
-          <div>
-              <div>
-                  <b>Wind</b>
-                  Now: -
-                  Max: {{maxW}}
-                  Min: {{minW}}
-              </div>
-          </div>
-          <div>
-              <img src="/img/bad-weather.png" alt="" style="width: 42px;">
-          </div>
-      </div>
-      <div class="weatrer-box">
-          <div>
-              <div>
-                  <b>Pressure</b>
-                  Now: -
-                  Max: {{maxP}}℃
-                  Min: {{minP}}℃
-              </div>
-          </div>
-          <div>
-              <img src="/img/barometer.png" alt="" style="width: 42px;">
-          </div>
-      </div>
+  {{> station-boxes}}
+  {{> add-report}}
+  <div class="title">
+      Reports:
   </div>
   {{> list-reports}}
-  {{> add-report}}
 </section>

@@ -1,16 +1,21 @@
 <table class="table is-fullwidth">
   <thead>
     <tr>
+        <th>Date</th>
       <th>Code</th>
       <th>Temperature</th>
       <th>Wind Speed</th>
       <th>Pressure</th>
       <th>Derection</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
     {{#each reports}}
     <tr>
+        <td>
+          {{formatDate date "YYYY-MM-DD; hh:mm"}}
+        </td>
       <td>
         {{code}}
       </td>
@@ -25,6 +30,14 @@
       </td>
       <td>
         {{direction}}
+      </td>
+      <td>
+        <form action="{{stationId}}/delreport" method="post">
+            <input type="text" name="r_id" value="{{r_id}}" hidden disabled>
+            <button type="submit" style="border: none; background: none; padding: 0; margin: 0;">
+                <img src="/img/delete.png" style="width: 32px;  margin: 0px;">
+            </button>
+        </form>
       </td>
     </tr>
     {{/each}}

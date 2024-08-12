@@ -1,1 +1,50 @@
-{{user.firstName}}
+<div class="box">
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input class="input" type="text" value="{{user.firstName}}" disabled>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Last name</label>
+      <div class="control">
+        <input class="input" type="text" value="{{user.lastName}}" disabled>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" type="email" value="{{user.email}}" disabled>
+      </div>
+    </div>
+</div>
+<br>
+<h1 class="title">You may update your details below:</h1>
+
+<div class="box">
+    <form action="/user/update" method="POST">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" value="{{user.firstName}}" name="name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Last name</label>
+          <div class="control">
+            <input class="input" type="text" value="{{user.lastName}}" name="lastname">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" value="{{user.email}}" name="email" disabled>
+          </div>
+        </div>
+        <button class="button is-primary">Update</button>
+    </form>
+</div>

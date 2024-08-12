@@ -1,49 +1,36 @@
 import { v4 } from "uuid";
 import { initStore } from "../utils/store-utils.js";
 
-const db = initStore("reports");
+const db = initStore("reports");                                                // Initialize the store for handling report data.
 
 export const reportStore = {
+  // Retrieves all reports from the store.
   async getAllReports() {
-    await db.read();
-    return db.data.reports;
+    await db.read();                                                            // Read data from the store.
+    return db.data.reports;                                                     // Return the list of reports.
   },
 
-  async addReport(stationtId, report) {
-    await db.read();
-    report._id = v4();
-    report.stationId = stationtId;
-    db.data.reports.push(report);
-    await db.write();
-    return report;
+  // Adds a new report to the store.
+  async addReport(stationId, report) {
+    await db.read();                                                            // Read data from the store.
+    report._id = v4();                                                          // Generate a unique ID for the new report.
+    report.stationId = stationId;                                               // Assign the station ID to the report.
+    db.data.reports.push(report);                                               // Add the new report to the list of reports.
+    await db.write();                                                           // Write the updated list back to the store.
+    return report;                                                              // Return the newly added report.
   },
 
+  // Retrieves reports associated with a specific station ID.
   async getReportByStationId(id) {
-    await db.read();
-    return db.data.reports.filter((station) => station.stationId === id);
+    await db.read();                                                            // Read data from the store.
+    return db.data.reports.filter((report) => report.stationId === id);         // Filter and return reports by station ID.
   },
 
-  async getTrackById(id) {
-    await db.read();
-    return db.data.reports.find((track) => track._id === id);
-  },
-
-  async deleteTrack(id) {
-    await db.read();
-    const index = db.data.reports.findIndex((track) => track._id === id);
-    db.data.reports.splice(index, 1);
-    await db.write();
-  },
-
-  async deleteAllTracks() {
-    db.data.tracks = [];
-    await db.write();
-  },
-
-  async updateTrack(track, updatedTrack) {
-    track.title = updatedTrack.title;
-    track.artist = updatedTrack.artist;
-    track.duration = updatedTrack.duration;
-    await db.write();
+  // Deletes a report by its ID.
+  async deleteReportById(id) {
+    await db.read();                                                            // Read data from the store.
+    const index = db.data.reports.findIndex((report) => report._id === id);     // Find the index of the report to be deleted.
+    db.data.reports.splice(index, 1);                                           // Remove the report from the list.
+    await db.write();                                                           // Write the updated list back to the store.
   },
 };

@@ -1,28 +1,19 @@
-<table class="table is-fullwidth">
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Latitude</th>
-      <th>Longitude</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each stations}}
-    <tr>
-      <td>
-          <h3 class="title">
+{{#each stations}}
+    {{#with this as |station|}}
+    <div class="box">
+        {{> station-boxes station=station}}
+        <form action="/station/{{_id}}" method="POST" style="width: 100%;">
+        <span>
             <a href="/station/{{_id}}">
-              {{title}}
+                <img src="/img/folder.png" style="width: 32px; margin: 8px 8px 0px 0px;">
             </a>
-        </h3>
-      </td>
-      <td>
-        {{latitude}}
-      </td>
-      <td>
-        {{longitude}}
-      </td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
+        </span>
+        <span>
+                <button type="submit" style="border: none; background: none; padding: 0; margin: 0;">
+                    <img src="/img/delete.png" style="width: 32px;  margin: 8px 8px 0px 0px;">
+                </button>
+        </span>
+        </form>
+    </div>
+    {{/with}}
+{{/each}}

@@ -22,3 +22,10 @@
  - Min/Max pressure/wind/temp
  - users login/signup
  - only user's stations
+
+ ## version 0.0.9
+ ### Reached Release 3 requests
+- user can edit details
+- user can add stations
+- user can delete stations
+- logout user

@@ -1,4 +1,4 @@
-<form action="/dashboard/addStation" method="POST">
+<form action="/dashboard/addStation" method="POST" style="margin-bottom: 10px;">
     <div class="field is-horizontal">
         <div class="field-body">
             <div class="field">
@@ -7,11 +7,11 @@
             </div>
             <div class="field">
                 <label><b>Latitude:</b></code>
-                <input class="input" type="numper" step='0.0001' placeholder="Enter latitude" name="latitude">
+                <input class="input" type="number" step='0.000001' placeholder="Enter latitude" name="latitude">
             </div>
             <div class="field">
                 <label><b>Longitude:</b></code>
-                <input class="input" type="number" step='0.0001' placeholder="Enter longitude" name="longitude">
+                <input class="input" type="number" step='0.000001' placeholder="Enter longitude" name="longitude">
             </div>
             <div class="field">
                 <input class="input" type="hidden" name="userId" value="{{user._id}}">
