@@ -2,19 +2,28 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "lana",
-      "latitude": "2332.0001",
-      "longitude": "3254",
-      "userId": "1b456571-667a-4b74-897d-ef5c96d9e37e",
-      "_id": "767072d6-6af8-434e-9ad3-1e3e2c68f5f6"
+      "title": "Kyiv",
+      "latitude": 50.4333,
+      "longitude": 30.5167,
+      "userId": "bc147541-60fa-4c12-9935-e1f00457ff96",
+      "date": "2024-08-18T10:50:12.736Z",
+      "_id": "7344cb5a-540d-4fa5-b66f-e9949d65059d"
+    },
+    {
+      "title": "Sidney",
+      "latitude": -33.8679,
+      "longitude": 151.2073,
+      "userId": "bc147541-60fa-4c12-9935-e1f00457ff96",
+      "date": "2024-08-18T10:51:39.885Z",
+      "_id": "b7d07074-993a-4463-a0e1-5fa85cc6ff07"
     },
     {
       "title": "Dublin",
-      "latitude": "2332.0001",
-      "longitude": "213444324",
+      "latitude": "53.344",
+      "longitude": "-6.267",
       "userId": "bc147541-60fa-4c12-9935-e1f00457ff96",
-      "date": "2024-08-12T10:30:57.356Z",
-      "_id": "e5ccfbb2-2141-48f9-a0cf-8dc3b8fb5ba1"
+      "date": "2024-08-18T12:51:54.977Z",
+      "_id": "9831d09f-703f-46c5-88f2-1b3cf278878f"
     }
   ]
 }

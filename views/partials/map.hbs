@@ -1,0 +1,14 @@
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeObi3DOMoDi0zlP2Oe5cCqdpZWBWovfY&loading=async&libraries=maps,marker&v=beta" defer>
+</script>
+
+<gmp-map center="53.344,-6.267" zoom="2" map-id="DEMO_MAP_ID" class="map">
+    {{#each stations}}
+        {{#with this as |station|}}
+    <gmp-advanced-marker
+        position="{{station.latitude}},{{station.longitude}}"
+        title="{{station.title}}"
+      ></gmp-advanced-marker>
+      {{/with}}
+  {{/each}}
+</gmp-map>

@@ -12,14 +12,83 @@
       "stationId": "343c6030-d1ae-4d8a-a3b9-2f4d604694a9"
     },
     {
-      "code": "123",
-      "temp": 28,
-      "wind_speed": 43,
-      "pressure": 544,
+      "temp": 33.18,
+      "wind_speed": 0.89,
+      "pressure": 1011,
+      "direction": 336,
+      "date": "2024-08-18T10:15:46.422Z",
+      "_id": "438f3436-16c1-48a5-b9a5-0c26ebb3ca69",
+      "stationId": "48f93587-af27-43a9-8ece-b7aaf788a0d8"
+    },
+    {
+      "code": 800,
+      "temp": 15.81,
+      "tempFils": 18.67,
+      "wind_speed": 1.02,
+      "pressure": 1016,
+      "direction": 253,
+      "description": "clear sky",
+      "date": "2024-08-18T10:59:24.572Z",
+      "_id": "e99cf72b-4d8c-4ff3-951e-9c6f24cd7cc1",
+      "stationId": "e24364bf-9df9-41c7-af22-3decee806870"
+    },
+    {
+      "code": 804,
+      "temp": 14.84,
+      "tempFils": 15.67,
+      "wind_speed": 2.57,
+      "pressure": 1016,
+      "direction": 230,
+      "description": "overcast clouds",
+      "date": "2024-08-18T11:11:08.116Z",
+      "_id": "0542b543-975e-4ece-afe7-5698e38ac729",
+      "stationId": "e24364bf-9df9-41c7-af22-3decee806870"
+    },
+    {
+      "code": "800",
+      "temp": 16,
+      "wind_speed": 1,
+      "pressure": 1000,
       "direction": "north",
-      "date": "2024-08-12T10:31:14.367Z",
-      "_id": "c1b28d89-473a-4e2c-94db-83a37c32a0db",
-      "stationId": "e5ccfbb2-2141-48f9-a0cf-8dc3b8fb5ba1"
+      "date": "2024-08-18T11:12:01.593Z",
+      "_id": "f88b4b1f-ea97-4021-99ad-25f59aff31e6",
+      "stationId": "e24364bf-9df9-41c7-af22-3decee806870"
+    },
+    {
+      "code": 804,
+      "temp": 13.17,
+      "tempFils": 12.4,
+      "wind_speed": 0.45,
+      "pressure": 1021,
+      "direction": 268,
+      "description": "overcast clouds",
+      "date": "2024-08-18T11:45:03.473Z",
+      "_id": "9bc480bc-6bfe-4af4-b1cf-0de62c2c2b6e",
+      "stationId": "b7d07074-993a-4463-a0e1-5fa85cc6ff07"
+    },
+    {
+      "code": 800,
+      "temp": 34.84,
+      "tempFils": 35.82,
+      "wind_speed": 0.45,
+      "pressure": 1010,
+      "direction": 265,
+      "description": "clear sky",
+      "date": "2024-08-18T11:49:43.221Z",
+      "_id": "3c3f1077-5815-49a6-b80e-039fa952f861",
+      "stationId": "7344cb5a-540d-4fa5-b66f-e9949d65059d"
+    },
+    {
+      "code": 803,
+      "temp": 19.48,
+      "tempFils": 19,
+      "wind_speed": 7.2,
+      "pressure": 1014,
+      "direction": 250,
+      "description": "broken clouds",
+      "date": "2024-08-18T12:59:45.770Z",
+      "_id": "b3646288-9199-427a-af69-faec63c5790b",
+      "stationId": "9831d09f-703f-46c5-88f2-1b3cf278878f"
     }
   ]
 }

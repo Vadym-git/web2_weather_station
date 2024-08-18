@@ -7,7 +7,7 @@
     display: flex;
     /* justify-content: space-around; */
     background-color: black;
-    width: 220px;
+    width: 230px;
     height: auto;
     margin: 4px;
     padding: 8px;
@@ -28,5 +28,8 @@
     margin-right: 8px; /* Add some space between the two divs */
 }
 
-.card-img{
+.map{
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
 }

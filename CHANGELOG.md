@@ -23,9 +23,15 @@
  - users login/signup
  - only user's stations
 
- ## version 0.0.9
- ### Reached Release 3 requests
+## version 0.0.9
+### Reached Release 3 requests
 - user can edit details
 - user can add stations
 - user can delete stations
 - logout user
+
+## version 1.0
+### Reached Release 4 requests
+- chats added
+- map added
+- API requests, report generation added

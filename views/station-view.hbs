@@ -1,10 +1,43 @@
 {{> menu}}
 
 <section class="section">
-  <div class="title">
-    <b>{{uppercase station.title}}</b>
+  <div class="title" style="display: flex; justify-content: space-between;">
+      <div>
+          <b>{{uppercase station.title}}</b>
+      </div>
+      <div>
+          <form action="/station/{{station._id}}/generateReport" method="post">
+              <button class="button is-danger">Generate Report</button>
+          </form>
+      </div>
   </div>
   {{> station-boxes}}
+  <!-- charts -->
+      <div class="box" id="chart">
+      </div>
+<script>
+  data = {
+    labels: [
+        {{#each chart}}
+        "{{formatDate dt "YYYY-MM-DD; hh:mm"}}",
+        {{/each}}
+    ],
+    datasets: [
+      { name: "Temperature", values: [
+          {{#each chart}}
+          {{main.temp}},
+          {{/each}}
+      ] }
+    ]
+  };
+  new frappe.Chart("#chart", {
+    data: data,
+    type: "line",
+    height: 180,
+    colors: ["green"]
+  });
+</script>
+  <!-- charts end -->
   {{> add-report}}
   <div class="title">
       Reports:
